@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="Css/index.css" rel="stylesheet">
     <title>MCelite - Homepage</title>
 </head>
@@ -58,7 +59,7 @@
         </nav>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-lg-5 col-md-5 colMain order-2">
+                <div class="col-lg-5 col-md-5 colMain order-sm-last order-lg-first">
                     <p class="pTitle pMain">For a healthy,</p>
                     <p class="pTitle pMain">balanced diet.</p>
                     <p class="pTitleSub pMainSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -66,7 +67,7 @@
                         et dolore magna aliqua. </p>
                     <button class="btnBuy">SHOP FOR PRODUCTS</button>
                 </div>
-                <div class="col-lg-7 col-md-7 mx-auto text-center order-1 colImage">
+                <div class="col-lg-7 col-md-7 mx-auto text-center order-first colImage">
                     <img src="Image/Packaging.png" class="img-fluid imgMain">
                 </div>
             </div>
@@ -180,11 +181,9 @@
         var scroll = $(window).scrollTop();
         if (scroll < 50) {
             $('.fixed-top').css('background', 'transparent');
-            $('.btncontact').css('background-color', 'transparent');
             $('.fixed-top').css('box-shadow', 'none');
         } else {
             $('.fixed-top').css('background', 'white');
-            $('.btncontact').css('color', '#212121 !important');
             $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
         }
     });
