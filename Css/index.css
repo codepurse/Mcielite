@@ -15,13 +15,75 @@ html, body {
     }
 }
 
+@media only screen and (max-width: 998px) {
+    .pMain {
+        font-size: 2.4rem !important;
+    }
+    .pMainSub {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .colImage {
+        margin-top: 100px !important;
+    }
+    .pMain {
+        font-size: 1.8rem !important;
+    }
+    .btnBuy {
+        font-size: 0.9rem !important;
+        width: auto !important;
+    }
+    .imgMain {
+        width: 300px !important;
+    }
+    .pCheck {
+        font-size: 1rem !important;
+    }
+    .conTestimonial {
+        margin-top: 20px !important;
+    }
+    .img1 {
+        width: 350px !important;
+        height: 300px !important;
+    }
+    .img2 {
+        top: 120px !important;
+    }
+    .pFooterTitle {
+        font-weight: 700 !important;
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+    }
+    .pFooterTitleSub {
+        margin-left: 5px !important;
+        line-height: normal !important;
+        font-weight: 500 !important;
+    }
+    .pTerms {
+        margin-top: 35px !important;
+    }
+    .pFooterTitleSubAdd {
+        margin-left: 5px !important;
+    }
+    .txtSearch {
+        margin-top: 20px !important;
+    }
+}
+
+
+.navbar {
+    transition: all 0.2s;
+}
+
 .pTitle {
     font-family: Abril Fatface;
     color: #3a5c3e;
     font-weight: bold;
     line-height: 100%;
     font-size: 3.2rem;
-    text-shadow: 4px 4px 10px rgba(150, 150, 150, 0.69);
+    text-shadow: 4px 4px 10px rgba(150, 150, 150, 0.20);
 }
 
 .pTitleSub {
@@ -210,7 +272,7 @@ html, body {
 .box2 {
     background-color: white;
     border-radius: 14px;
-    width:500px;
+    width: 500px;
     height: 140px !important;
     min-height: 140px !important;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
