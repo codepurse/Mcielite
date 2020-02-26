@@ -109,10 +109,10 @@
         </div>
         <div class="row align-items-center rowIngredients">
             <div class="col-lg-4 order-3  order-lg-1">
-                <button class="btnIngredients">GUYABANO</button>
-                <button class="btnIngredients">SPIRULINA</button>
-                <button class="btnIngredients">WHEATGRASS</button>
-                <button class="btnIngredients active">STEVIA</button>
+                <button class="btnIngredients btnGuyabano">GUYABANO</button>
+                <button class="btnIngredients btnSpirulina">SPIRULINA</button>
+                <button class="btnIngredients btnWheat">WHEATGRASS</button>
+                <button class="btnIngredients active btnStevia">STEVIA</button>
             </div>
             <div class="col-lg-4 order-2 order-lg-2" style="padding-left: 70px;">
                 <div>
@@ -132,7 +132,10 @@
                 </div>
             </div>
             <div class="col-lg-4 order-1 order-lg-3">
-                <img src="Image/stevia.png" class="img-fluid imgIng">
+                <img src="Image/stevia.png" class="img-fluid imgIng imgStevia">
+                <img src="Image/wheat.png" class="img-fluid imgIng imgWheat">
+                <img src="Image/guyabano.png" class="img-fluid imgIng imgGuyabano">
+                <img src="Image/spirulina.jpg" class="img-fluid imgIng imgSpirulina">
             </div>
         </div>
     </div>
@@ -194,6 +197,53 @@
             $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
         }
     });
+
+    $(document).ready(function () {
+        $('.btnIngredients').click(function () {
+            $('.btnIngredients').removeClass('active');
+            $(this).removeClass("deactive");
+            $(this).addClass("active");
+        });
+    });
+
+    $(document).ready(function () {
+        $('.btnStevia').click(function (e) {
+            e.preventDefault();
+            $('.imgGuyabano').css('display', 'none');
+            $('.imgWheat').css('display', 'none');
+            $('.imgStevia').attr('style', 'display: block !important');
+            const element = document.querySelector('.imgStevia')
+            element.classList.add('animated', 'slideInRight')
+        });
+        $('.btnWheat').click(function (e) {
+            e.preventDefault();
+            $('.imgStevia').css('display', 'none');
+            $('.imgGuyabano').css('display', 'none');
+            $('.imgWheat').attr('style', 'display: block !important');
+            const element = document.querySelector('.imgWheat')
+            element.classList.add('animated', 'slideInRight')
+        });
+        $('.btnSpirulina').click(function (e) {
+            e.preventDefault();
+            $('.imgWheat').css('display', 'none');
+            $('.imgStevia').css('display', 'none');
+            $('.imgGuyabano').css('display', 'none');
+            $('.imgSpirulina').attr('style', 'display: block !important');
+            const element = document.querySelector('.imgSpirulina')
+            element.classList.add('animated', 'slideInRight')
+        });
+        $('.btnGuyabano').click(function (e) {
+            e.preventDefault();
+            $('.imgStevia').css('display', 'none');
+            $('.imgWheat').css('display', 'none');
+            $('.imgGuyabano').attr('style', 'display: block !important');
+            const element = document.querySelector('.imgGuyabano')
+            element.classList.add('animated', 'slideInRight')
+        });
+    });
+
+
+
 </script>
 
 </html>
