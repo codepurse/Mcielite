@@ -9,17 +9,24 @@ html, body {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
 .pTitle {
-    font-family: Roboto;
+    font-family: Abril Fatface;
     color: #3a5c3e;
     font-weight: bold;
     line-height: 100%;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     text-shadow: 4px 4px 10px rgba(150, 150, 150, 0.69);
 }
 
 .pTitleSub {
-    font-family: Roboto;
+    font-family: Raleway;
+    font-weight: 500;
     color: #949d7e;
     font-size: 1rem;
 }
@@ -39,7 +46,7 @@ html, body {
 }
 
 .pCheck {
-    font-family: Roboto;
+    font-family: Raleway;
     color: #3e4e15;
     font-size: 1.2rem;
     margin-top: 15px;
@@ -75,14 +82,14 @@ html, body {
 }
 
 .pFooterTitle {
-    font-family: Roboto;
+    font-family: Raleway;
     color: #3e4e15;
     font-weight: 500;
     font-size: 1rem;
 }
 
 .pFooterTitleSub {
-    font-family: Roboto;
+    font-family: Raleway;
     color: #3e4e15;
     font-size: 0.9rem;
     margin-left: 20px;
@@ -90,14 +97,14 @@ html, body {
 }
 
 .pFooterTitleSubAdd {
-    font-family: Roboto;
+    font-family: Raleway;
     color: #3e4e15;
     font-size: 0.9rem;
     margin-top: -10px;
 }
 
 .txtSearch {
-    font-family: Roboto;
+    font-family: Raleway;
     color: #3e4e15;
     font-size: 0.9rem;
     font-style: italic;
@@ -111,4 +118,138 @@ html, body {
     -webkit-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
     box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
+}
+
+.conItem {
+    height: 600px;
+    min-height: 600px;
+}
+
+.pTitleSubItem {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.pDesc {
+    font-family: Abril Fatface;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.pDescSub {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1rem;
+}
+
+.box {
+    background-color: white;
+    border-radius: 14px;
+    width: 200px;
+    height: 40px !important;
+    min-height: 40px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+}
+
+.pSign {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btnMinus {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -10px;
+    border-right: 1px solid lightgray;
+}
+
+.btnPlus {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -10px;
+    border-left: 1px solid lightgray;
+}
+
+.btnNumber {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.box2 {
+    background-color: white;
+    border-radius: 14px;
+    width:500px;
+    height: 140px !important;
+    min-height: 140px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+}
+
+.pBoxTitle {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.pBoxTitleSub {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+.btnIngredients {
+    font-family: Raleway;
+    font-size: 1rem;
+    color: #3a5c3e;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    margin-top: 15px;
+}
+
+.active {
+    background-color: #baca91;
 }
