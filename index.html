@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="Css/index.css" rel="stylesheet">
     <title>MCelite - Homepage</title>
 </head>
@@ -62,13 +63,14 @@
                 <div class="col-lg-5 col-md-5 colMain order-sm-last order-lg-first">
                     <p class="pTitle pMain">For a healthy,</p>
                     <p class="pTitle pMain">balanced diet.</p>
-                    <p class="pTitleSub pMainSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="pTitleSub pMainSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore
                         et dolore magna aliqua. </p>
                     <button class="btnBuy">SHOP FOR PRODUCTS</button>
                 </div>
                 <div class="col-lg-7 col-md-7 mx-auto text-center order-first colImage">
-                    <img src="Image/Packaging.png" class="img-fluid imgMain">
+                    <img src="Image/Packaging.png" class="img-fluid imgMain" data-aos="zoom-in">
                 </div>
             </div>
         </div>
@@ -76,12 +78,13 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-lg-7 mx-auto text-center">
-                <img src="Image/Packaging2.png" class="img-fluid imgMain">
+                <img src="Image/Packaging2.png" class="img-fluid imgMain" data-aos="zoom-in">
             </div>
             <div class="col-lg-5">
                 <p class="pTitle pMain">Elixir.</p>
                 <p class="pTitle pMain">Powder Drink.</p>
-                <p class="pTitleSub pMainSub" style="font-size: 1.4rem;font-weight: 500;color:#96aa64;">Lorem ipsum dolor sit
+                <p class="pTitleSub pMainSub" style="font-size: 1.4rem;font-weight: 500;color:#96aa64;">Lorem ipsum
+                    dolor sit
                 </p>
                 <div class="form-inline" style="margin-top: -10px;">
                     <img src="Image/right.png" class="img-fluid" style="width: 15px">
@@ -136,8 +139,8 @@
             </div>
             <div class="col-lg-7">
                 <div class="divImage">
-                    <img src="Image/image1.png" class="img-fluid img1 imgMain">
-                    <img src="Image/image2.png" class="img-fluid img2 mx-auto d-block imgMain">
+                    <img src="Image/image1.png" class="img-fluid img1 imgMain" data-aos="zoom-in">
+                    <img src="Image/image2.png" class="img-fluid img2 mx-auto d-block imgMain" data-aos="zoom-in">
                 </div>
             </div>
         </div>
@@ -175,8 +178,13 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script>
+    AOS.init();
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 50) {

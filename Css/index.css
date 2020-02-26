@@ -411,6 +411,21 @@ html, body {
     display: none !important;
 }
 
-.img-fluid {
+.imgWheat, .imgGuyabano, .imgSpirulinas, .imgStevia {
     animation-duration: 0.4s;
+}
+
+.pAdd {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.imgSearch, .imgCart {
+    cursor: pointer;
+    transition: all 0.2s;
 }
