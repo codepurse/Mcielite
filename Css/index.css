@@ -18,6 +18,12 @@ html, body {
     }
 }
 
+@media only screen and (max-height: 900px) {
+    .container-fluid {
+        max-height: 900px !important;
+    }}
+}
+
 @media only screen and (max-width: 998px) {
     .pMain {
         font-size: 2.4rem !important;
