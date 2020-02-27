@@ -206,7 +206,7 @@
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 50) {
-            $('.fixed-top').css('background', 'transparent');
+            $('.fixed-top').css('background', '#f4f4f1');
             $('.fixed-top').css('box-shadow', 'none');
         } else {
             $('.fixed-top').css('background', '#f4f4f1');
@@ -270,7 +270,6 @@
     });
 
     var click;
-
     $(document).ready(function () {
         $('.txtSearchNav').bind('focus', function () {
             $('.nav-link').css('visibility', 'hidden');

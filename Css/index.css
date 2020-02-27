@@ -39,6 +39,7 @@ html, body {
     }
 }
 
+
 @media only screen and (max-width: 556px) {
     .colImage {
         margin-top: 100px !important;
@@ -153,6 +154,9 @@ html, body {
         margin: 0 auto !important;
         display: block !important;
         margin-top: 10px !important;
+    }
+    .nav {
+        background-color: white !important;
     }
 }
 
@@ -528,5 +532,11 @@ a {
     cursor: pointer;
     margin-top: 8px;
     margin-left: 20px;
+  }
+
+  .pFooterTitleSub:hover {
+      cursor: pointer;
+      color: #949d7e;
+      transition: all 0.2s;
   }
 
