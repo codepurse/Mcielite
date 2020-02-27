@@ -50,8 +50,13 @@
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
                             href="contact.html">CONTACT</a></li>
                     <li>
-                        <img src="Image/search.png" class="img-fluid imgSearch"
-                            style="margin-right: 15px;width: 18px;margin-top: 10px;">
+                        <div id="wrap" style="margin-left: 20px;">
+                            <form action="" autocomplete="on">
+                                <input id="search" name="search" type="text" class="txtSearchNav"
+                                    placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher"
+                                    type="submit" class="submitNav" style="margin-right: 50px;margin-top: 10px;">
+                            </form>
+                        </div>
                     </li>
                     <li>
                         <div class="divCart" style="position:relative;">
@@ -72,7 +77,8 @@
                 </div>
             </div>
             <div class="col-lg-4 align-self-end" style="position: relative;">
-                <img src="Image/output-onlinepngtools(2).png " class="img-fluid imgItem animated zoomIn fast" style="z-index: 1;">
+                <img src="Image/output-onlinepngtools(2).png " class="img-fluid imgItem animated zoomIn fast"
+                    style="z-index: 1;">
                 <div class="box2 mx-auto d-block" style="z-index: -1;">
                     <div class="row">
                         <div class="col-lg-4 col-4 text-center">
@@ -263,7 +269,18 @@
         });
     });
 
+    var click;
 
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focus', function () {
+            $('.nav-link').css('visibility', 'hidden');
+        });
+    });
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focusout', function () {
+            $('.nav-link').css('visibility', 'visible');
+        });
+    });
 
 </script>
 

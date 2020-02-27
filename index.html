@@ -53,7 +53,13 @@
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
                             href="contact.html">CONTACT</a></li>
                     <li>
-                        <img src="Image/search.png" class="img-fluid imgSearch" style="width: 18px;margin-top: 10px;">
+                        <div id="wrap">
+                            <form action="" autocomplete="on">
+                                <input id="search" name="search" type="text" class="txtSearchNav"
+                                    placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher"
+                                    type="submit" class="submitNav">
+                            </form>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -75,7 +81,7 @@
             </div>
         </div>
     </div>
-    <div class="container" style = "padding-top: 40px;">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 mx-auto text-center">
                 <img src="Image/Packaging2.png" class="img-fluid imgMain" data-aos="zoom-in">
@@ -109,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="container conTestimonial" style="margin-top: 70px;padding-bottom: 70px;">
+    <div class="container conTestimonial" style="margin-top: 10px;padding-bottom: 70px;">
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <p class="pTitle pMain">Watch these</p>
@@ -195,6 +201,20 @@
             $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
         }
     });
+
+    var click;
+
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focus', function () {
+            $('.nav-link').css('visibility', 'hidden');
+        });
+    });
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focusout', function () {
+            $('.nav-link').css('visibility', 'visible');
+        });
+    });
+
 </script>
 
 </html>
