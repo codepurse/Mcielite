@@ -156,7 +156,7 @@ html, body {
     }
 }
 
-.container-fluid {
+.container-fluid, .container {
     max-height: 900px !important;
 }
 
