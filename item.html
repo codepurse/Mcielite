@@ -235,7 +235,7 @@
         });
         $('.btnWheat').click(function (e) {
             e.preventDefault();
-            $('.imgStevia').css('display', 'none');
+            $('.imgStevia').attr('style', 'display: none !important');
             $('.imgGuyabano').css('display', 'none');
             $('.imgSpirulina').css('display', 'none');
             $('.imgWheat').attr('style', 'display: block !important');
@@ -246,7 +246,7 @@
         $('.btnSpirulina').click(function (e) {
             e.preventDefault();
             $('.imgWheat').css('display', 'none');
-            $('.imgStevia').css('display', 'none');
+            $('.imgStevia').attr('style', 'display: none !important');
             $('.imgGuyabano').css('display', 'none');
             $('.imgSpirulina').attr('style', 'display: block !important');
             const element = document.querySelector('.imgSpirulina')
@@ -255,7 +255,7 @@
         });
         $('.btnGuyabano').click(function (e) {
             e.preventDefault();
-            $('.imgStevia').css('display', 'none');
+            $('.imgStevia').attr('style', 'display: none !important');
             $('.imgWheat').css('display', 'none');
             $('.imgSpirulina').css('display', 'none');
             $('.imgGuyabano').attr('style', 'display: block !important');
