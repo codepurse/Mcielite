@@ -59,6 +59,10 @@ html, body {
     }
     .conTestimonial {
         margin-top: 20px !important;
+        padding-bottom: 0px !important;
+    }
+    .divImage {
+        margin-top: 40px !important;
     }
     .img1 {
         width: 350px !important;
