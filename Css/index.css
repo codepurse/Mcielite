@@ -39,7 +39,6 @@ html, body {
     }
 }
 
-
 @media only screen and (max-width: 556px) {
     .colImage {
         margin-top: 100px !important;
@@ -452,17 +451,16 @@ html, body {
     transition: all 0.2s;
 }
 
-
 a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-    
     display: inline-block;
     position: relative;
-  }
-  a:after {    
+}
+
+a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -473,22 +471,24 @@ a {
     background: #3e4e15;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-  @media screen and (max-height: 300px) {
-      ul {
-          margin-top: 40px;
-      }
-  }
+}
 
-  #wrap {
-      margin-left: 10px;
-  }
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
 
-  .txtSearchNav {
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+#wrap {
+    margin-left: 10px;
+}
+
+.txtSearchNav {
     font-family: Raleway;
     font-size: 1.2rem;
     height: 40px;
@@ -507,24 +507,25 @@ a {
     z-index: 3;
     transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
     cursor: pointer;
-  }
-  
-  .txtSearchNav:focus:hover {
+}
+
+.txtSearchNav:focus:hover {
     border-bottom: 1px solid #3e4e15;
-  }
-  
-  .txtSearchNav:focus {
+}
+
+.txtSearchNav:focus {
     width: 350px;
     z-index: 1;
     border-bottom: 1px solid #3e4e15;
     cursor: text;
     margin-right: 10px;
-  }
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     height: 67px;
     width: 40px;
     display: inline-block;
-    color:red;
+    color: red;
     background: url("../Image/search.png") center center no-repeat;
     background-size: 18px;
     text-indent: -1000px;
@@ -536,11 +537,78 @@ a {
     cursor: pointer;
     margin-top: 8px;
     margin-left: 20px;
-  }
+}
 
-  .pFooterTitleSub:hover {
-      cursor: pointer;
-      color: #949d7e;
-      transition: all 0.2s;
-  }
+.pFooterTitleSub:hover {
+    cursor: pointer;
+    color: #949d7e;
+    transition: all 0.2s;
+}
 
+.btnBack, .btnForward {
+    font-family: Raleway;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #a1b473;
+    padding-bottom: 5px;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnBack:hover, .btnForward:hover {
+    box-shadow: 0 2px 12px -6px rgb(58, 92, 62, 0.5) !important;
+    background-color: #3a5c3e
+}
+
+.modal-backdrop {
+    background-color: white;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+}
+
+.modal .modal-dialog {
+    max-width: 350px !important;
+}
+
+.modalTitle {
+    font-family: Raleway;
+    color: #495a1d;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btnAdd {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #acc46f;
+    padding: 10px 10px;
+    width: 240px;
+    margin: 0 auto !important;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.btnProceed {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #687f31;
+    padding: 10px 10px;
+    width: 240px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 20px;
+}
