@@ -612,3 +612,15 @@ input[type="submit"] {
     border: 0px;
     border-radius: 20px;
 }
+
+.btnNav {
+    font-family: Raleway;
+    color: white;
+    background-color: #99b15b;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}

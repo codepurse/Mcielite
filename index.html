@@ -25,8 +25,22 @@
 </head>
 
 <body>
-    <div class="container-fluid h-100">
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <div class="container-fluid conNav"
+        style="background-color: white !important;position: fixed;top: 0px;padding: 0px;">
+        <div class="row rowNav" style="padding: 10px 0px;">
+            <div class="col-lg-12 colNav">
+                <p class="pPromo text-center"><span
+                        style="font-family: Abril Fatface;color:#97b058;font-size: 2rem;font-weight: 700;">PROMO</span>&nbsp;<span
+                        style="font-family: Abril Fatface;color: #3d5000;font-size: 1.8rem;font-weight: 700;">Buy 2, get
+                        2 free!</span></p>
+            </div>
+        </div>
+        <div class="row rowButton">
+            <div class="col-lg-12">
+                <button class="btnNav">&#x2191;</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light" style="z-index: 99;margin-top:0px;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,20 +78,20 @@
                 </ul>
             </div>
         </nav>
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-5 col-md-5 colMain order-sm-last order-lg-first">
-                    <p class="pTitle pMain">For a healthy,</p>
-                    <p class="pTitle pMain">balanced diet.</p>
-                    <p class="pTitleSub pMainSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore
-                        et dolore magna aliqua. </p>
-                    <button class="btnBuy">SHOP FOR PRODUCTS</button>
-                </div>
-                <div class="col-lg-7 col-md-7 mx-auto text-center order-first colImage">
-                    <img src="Image/Packaging.png" class="img-fluid imgMain" data-aos="zoom-in">
-                </div>
+    </div>
+    <div class="container h-100 mainCon" style="transition: all 0.2s;">
+        <div class="row h-100 align-items-center" style="margin-top: 70px;">
+            <div class="col-lg-5 col-md-5 colMain order-sm-last order-lg-first">
+                <p class="pTitle pMain">For a healthy,</p>
+                <p class="pTitle pMain">balanced diet.</p>
+                <p class="pTitleSub pMainSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. </p>
+                <button class="btnBuy">SHOP FOR PRODUCTS</button>
+            </div>
+            <div class="col-lg-7 col-md-7 mx-auto text-center order-first colImage">
+                <img src="Image/Packaging.png" class="img-fluid imgMain" data-aos="zoom-in">
             </div>
         </div>
     </div>
@@ -193,12 +207,14 @@
     AOS.init();
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll < 50) {
-            $('.fixed-top').css('background', 'transparent');
-            $('.fixed-top').css('box-shadow', 'none');
+        if (scroll < 1) {
+            $('.navbar').css('background', 'transparent');
+            $('.navbar').css('box-shadow', 'none');
+            $('.conNav').css('z-index', '0');
         } else {
-            $('.fixed-top').css('background', 'white');
-            $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+            $('.navbar').css('background', 'white');
+            $('.navbar').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+            $('.conNav').css('z-index', '99');
         }
     });
 
@@ -212,6 +228,13 @@
     $(document).ready(function () {
         $('.txtSearchNav').bind('focusout', function () {
             $('.nav-link').css('visibility', 'visible');
+        });
+    });
+
+    $(document).ready(function () {
+        $(".btnNav").click(function () {
+            $(".rowNav").addClass("animated slideOutUp");
+            $('.rowButton').css('margin-top', '-85px');
         });
     });
 
