@@ -27,15 +27,13 @@
 <body>
     <div class="container-fluid conNav"
         style="background-color: white !important;position: fixed;top: 0px;padding: 0px;">
-        <div class="row rowNav" style="padding: 10px 0px;">
+        <div class="row rowNav" style="padding: 10px 0px;transition: all 0.2s;">
             <div class="col-lg-12 colNav">
                 <p class="pPromo text-center"><span
                         style="font-family: Abril Fatface;color:#97b058;font-size: 2rem;font-weight: 700;">PROMO</span>&nbsp;<span
                         style="font-family: Abril Fatface;color: #3d5000;font-size: 1.8rem;font-weight: 700;">Buy 2, get
                         2 free!</span></p>
             </div>
-        </div>
-        <div class="row rowButton">
             <div class="col-lg-12">
                 <button class="btnNav">&#x2191;</button>
             </div>
@@ -80,7 +78,7 @@
         </nav>
     </div>
     <div class="container h-100 mainCon" style="transition: all 0.2s;">
-        <div class="row h-100 align-items-center" style="margin-top: 70px;">
+        <div class="row h-100 align-items-center" style="margin-top: 100px;">
             <div class="col-lg-5 col-md-5 colMain order-sm-last order-lg-first">
                 <p class="pTitle pMain">For a healthy,</p>
                 <p class="pTitle pMain">balanced diet.</p>
@@ -231,11 +229,21 @@
         });
     });
 
+    var x = 1;
     $(document).ready(function () {
         $(".btnNav").click(function () {
-            $(".rowNav").addClass("animated slideOutUp");
-            $('.rowButton').css('margin-top', '-85px');
-            $('.btnNav').text("&#x2191;");
+            if (x === 1) {
+                $('.rowNav').css('margin-top', '-80px');
+                $('.btnNav').text("\u2193");
+                $('.mainCon').css('margin-top', '-40px');
+                x = 0;
+            }
+            else {
+                $('.rowNav').css('margin-top', '0px');
+                $('.btnNav').text("\u2191");
+                x = 1;
+                $('.mainCon').css('margin-top', '0px');
+            }
         });
     });
 
