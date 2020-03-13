@@ -10,11 +10,28 @@ html, body {
     .colImg {
         display: none !important;
     }
+    .pTitle {
+        font-size: 2rem !important;
+    }
 }
 
 .navbar {
     transition: all 0.2s;
 }
+
+.aLogo {
+    font-family: Abril Fatface;
+    color: #3e4e15;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+}
+
+.aLogo:hover {
+    color: #3a5c3e;
+}
+
 
 .txtSearchNav {
     font-family: Raleway;

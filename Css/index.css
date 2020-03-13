@@ -161,6 +161,34 @@ html, body {
     .nav {
         background-color: white !important;
     }
+    .pPromo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .pPromo > span {
+        font-size: 1.2rem !important;
+    }
+    #demo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .align-self-end {
+        margin-top: 70px !important;
+        margin-left: 10px !important;
+    }
+}
+
+.aLogo {
+    font-family: Abril Fatface;
+    color: #3e4e15;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+}
+
+.aLogo:hover {
+    color: #3a5c3e;
 }
 
 .container-fluid, .container {
@@ -169,6 +197,13 @@ html, body {
 
 .navbar {
     transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
 }
 
 .pTitle {
@@ -575,10 +610,6 @@ input[type="submit"] {
     box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
 }
 
-.modal .modal-dialog {
-    max-width: 350px !important;
-}
-
 .modalTitle {
     font-family: Raleway;
     color: #495a1d;
@@ -625,4 +656,64 @@ input[type="submit"] {
     padding: 5px;
     cursor: pointer;
     transition: all 0.2s;
+}
+
+.card-container {
+    width: 500px !important;
+    height: 470px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: none !important;
+}
+
+.imgPlay {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30%;
+}
+
+.btnnext {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0px;
+    background-color: #a6bc70;
+    border-radius: 50%;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnprev {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0px;
+    background-color: #a6bc70;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.active {
+    background-color: transparent !important;
+}
+
+.glider {
+    width: auto !important;
+}
+
+.glider-track {
+    width: 2000px !important;
 }

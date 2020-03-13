@@ -1,0 +1,703 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+    .divFooter {
+        width: 1100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+    .conIgredients {
+        max-width: 1200px !important;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .container-fluid {
+        max-height: 900px !important;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .pMain {
+        font-size: 2.4rem !important;
+    }
+    .pMainSub {
+        font-size: 1.1rem !important;
+    }
+    .conItem {
+        margin-top: 140px !important;
+    }
+    .divItemName {
+        position: static !important;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .colImage {
+        margin-top: 100px !important;
+    }
+    .pMain {
+        font-size: 1.8rem !important;
+    }
+    .btnBuy {
+        font-size: 0.9rem !important;
+        width: auto !important;
+    }
+    .imgMain {
+        width: 300px !important;
+    }
+    .pCheck {
+        font-size: 1rem !important;
+    }
+    .conTestimonial {
+        margin-top: 20px !important;
+        padding-bottom: 0px !important;
+    }
+    .divImage {
+        margin-top: 40px !important;
+    }
+    .img1 {
+        width: 350px !important;
+        height: 300px !important;
+    }
+    .img2 {
+        top: 120px !important;
+    }
+    .pFooterTitle {
+        font-weight: 700 !important;
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+    }
+    .pFooterTitleSub {
+        margin-left: 5px !important;
+        line-height: normal !important;
+        font-weight: 500 !important;
+    }
+    .pTerms {
+        margin-top: 35px !important;
+    }
+    .pFooterTitleSubAdd {
+        margin-left: 5px !important;
+    }
+    .txtSearch {
+        margin-top: 20px !important;
+    }
+    .pTitleSubItem {
+        font-weight: 700 !important;
+    }
+    .pItemName {
+        font-size: 2rem !important;
+    }
+    .pTitleSubItem {
+        font-size: 1.3rem !important;
+    }
+    .imgItem {
+        width: 300px !important;
+        display: block !important;
+        margin: 0 auto !important;
+        padding-left: 12% !important;
+        margin-top: 15px !important;
+    }
+    .box2 {
+        width: 100% !important;
+    }
+    .pBoxTitle {
+        font-size: 1.4rem !important;
+    }
+    .pBoxTitleSub {
+        font-size: 1.4rem !important;
+    }
+    .box2 {
+        height: auto !important;
+        left: 0% !important;
+        width: 80% !important;
+        position: static !important;
+        margin-top: -70px !important;
+    }
+    .pDesc {
+        font-size: 1.2rem !important;
+    }
+    .pDescSub {
+        font-size: 1rem !important;
+        margin-top: -10px !important;
+    }
+    .conIngredients {
+        margin-top: 350px !important;
+    }
+    .rowIngredients {
+        margin-top: -20px !important;
+    }
+    .pNutrition {
+        margin-top: 10px !important;
+    }
+    .pOurIng {
+        font-size: 2.2rem !important;
+        text-align: center;
+    }
+    .imgIng {
+        width: 350px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .pIngName {
+        font-size: 2rem !important;
+    }
+    .pIngName {
+        font-size: 2rem !important;
+    }
+    .btnIngredients {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+        margin-top: 10px !important;
+    }
+    .nav {
+        background-color: white !important;
+    }
+}
+
+.container-fluid, .container {
+    max-height: 900px !important;
+}
+
+.navbar {
+    transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
+}
+
+.pTitle {
+    font-family: Abril Fatface;
+    color: #3a5c3e;
+    font-weight: bold;
+    line-height: 100%;
+    font-size: 3.2rem;
+    text-shadow: 4px 4px 10px rgba(150, 150, 150, 0.20);
+}
+
+.aLogo {
+    font-family: Abril Fatface;
+    color: #3e4e15;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+}
+
+.aLogo:hover {
+    color: #3a5c3e;
+}
+
+.pTitleSub {
+    font-family: Raleway;
+    font-weight: 500;
+    color: #949d7e;
+    font-size: 1rem;
+}
+
+.btnBuy {
+    font-family: Roboto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #b8c58d;
+    border-radius: 25px;
+    width: 250px;
+    padding: 10px 25px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 16px -6px #3e4e15 !important;
+}
+
+.pCheck {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.divImage {
+    position: relative;
+}
+
+.img1 {
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+
+.img2 {
+    width: 450px;
+}
+
+.img2 {
+    position: absolute;
+    top: 300px;
+}
+
+.divFooter {
+    background-color: #baca91;
+    padding: 70px 0px;
+}
+
+.divFooterSub {
+    margin-top: -5px;
+}
+
+.pFooterTitle {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.pFooterTitleSub {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    line-height: 50%;
+}
+
+.pFooterTitleSubAdd {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.txtSearch {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 0.9rem;
+    font-style: italic;
+    background-color: #a6bc70;
+    border: 0px;
+    border-radius: 25px;
+    width: 100%;
+    background: url(../Image/search.png) no-repeat scroll 15px 13px #a6bc70;
+    background-size: 15px;
+    padding: 10px 35px;
+    -webkit-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.26);
+}
+
+.conItem {
+    height: 600px;
+    min-height: 600px;
+}
+
+.pTitleSubItem {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.pDesc {
+    font-family: Abril Fatface;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.pDescSub {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1rem;
+}
+
+.box {
+    background-color: white;
+    border-radius: 14px;
+    width: 200px;
+    height: 40px !important;
+    min-height: 40px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+}
+
+.pSign {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btnMinus {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 50px;
+    outline: none !important;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -10px;
+    border-right: 1px solid lightgray;
+}
+
+.btnPlus {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 40px;
+    outline: none !important;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -10px;
+    border-left: 1px solid lightgray;
+}
+
+.btnNumber {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.box2 {
+    background-color: #f5f5f5;
+    border-radius: 14px;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: -20%;
+    padding-top: 10px;
+    padding-bottom: 0 px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    margin-top: -120px;
+}
+
+.pBoxTitle {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.pBoxTitleSub {
+    font-family: Raleway;
+    color: #3a5c3e;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+.btnIngredients {
+    font-family: Raleway;
+    font-size: 1rem;
+    color: #3a5c3e;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: white;
+    outline: none !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+    margin-top: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #baca91;
+}
+
+.deactive {
+    background-color: #3a5c3e;
+}
+
+.btnIngredients:hover {
+    background-color: #cce391;
+}
+
+.imgWheat, .imgGuyabano, .imgSpirulina {
+    display: none !important;
+}
+
+.imgWheat, .imgGuyabano, .imgSpirulinas, .imgStevia {
+    animation-duration: 0.4s;
+}
+
+.pAdd {
+    font-family: Raleway;
+    color: #3e4e15;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.imgSearch, .imgCart {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #3e4e15;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+#wrap {
+    margin-left: 10px;
+}
+
+.txtSearchNav {
+    font-family: Raleway;
+    font-size: 1.2rem;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: #3a5c3e;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 5;
+    right: 0;
+    padding-bottom: 0px;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+}
+
+.txtSearchNav:focus:hover {
+    border-bottom: 1px solid #3e4e15;
+}
+
+.txtSearchNav:focus {
+    width: 350px;
+    z-index: 1;
+    border-bottom: 1px solid #3e4e15;
+    cursor: text;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    height: 67px;
+    width: 40px;
+    display: inline-block;
+    color: red;
+    background: url("../Image/search.png") center center no-repeat;
+    background-size: 18px;
+    text-indent: -1000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.pFooterTitleSub:hover {
+    cursor: pointer;
+    color: #949d7e;
+    transition: all 0.2s;
+}
+
+.btnBack, .btnForward {
+    font-family: Raleway;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #a1b473;
+    padding-bottom: 5px;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnBack:hover, .btnForward:hover {
+    box-shadow: 0 2px 12px -6px rgb(58, 92, 62, 0.5) !important;
+    background-color: #3a5c3e
+}
+
+.modal-backdrop {
+    background-color: white;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 20px 23px -4px rgba(0, 0, 0, 0.29);
+}
+
+.modal .modal-dialog {
+    max-width: 350px !important;
+    margin: 0 auto !important;
+}
+
+.modalTitle {
+    font-family: Raleway;
+    color: #495a1d;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btnAdd {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #acc46f;
+    padding: 10px 10px;
+    width: 240px;
+    margin: 0 auto !important;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.btnProceed {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #687f31;
+    padding: 10px 10px;
+    width: 240px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.btnNav {
+    font-family: Raleway;
+    color: white;
+    background-color: #99b15b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card-container {
+    width: 500px !important;
+    height: 470px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: none !important;
+}
+
+.btnnext {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0px;
+    background-color: #a6bc70;
+    border-radius: 50%;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnprev {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0px;
+    background-color: #a6bc70;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.active {
+    background-color: transparent !important;
+}
+
+.glider {
+    width: auto !important;
+}
+
+.glider-track {
+    width: 2000px !important;
+}

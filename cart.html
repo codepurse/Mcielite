@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="Css/cart.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-brand" href="#">
+                <a href="#" class="aLogo"><img src="Image/Light green logo.png" class="img-fluid imglogo"
+                        style="width: 70px;margin-right: 10px;">MCI<span class="pElite"
+                        style="text-transform: capitalize;margin-left: 5px;">Elite</span></a>
+            </nav>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li><a class="nav-link btnpackages"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto ;font-size: 15px;font-weight: 300;"
+                            href="index.html">HOME</a></li>
+                    <li><a class="nav-link btncontact"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
+                            href="contact.html">ABOUT</a></li>
+                    <li><a class="nav-link btnlogin" target="_self" href="item.html"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;">SHOP</a>
+                    </li>
+                    <li><a class="nav-link btncontact"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
+                            href="contact.html">CONTACT</a></li>
+                    <li>
+                        <img src="Image/cart.png" class="img-fluid imgCart" style="width: 18px;margin-top: 10px;">
+                    </li>
+                    <li><a class="nav-link btncontact"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
+                            href="contact.html">log-in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-borderless" id="shoplist">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tdImg"><img src="Image/cart1.png" class="img-fluid"></td>
+                                <td class="align-self-center tdImg">
+                                    <p class="pItem">Elixir</p>
+                                    <p class="pSubItem">Premium Powdered Drink</p>
+                                </td>
+                                <td class="pPrice">720.00</td>
+                                <td>
+                                    <div class="form-group mx-auto text-center">
+                                        <button class="btnMinus pls minus">&#x2212;</button>
+                                        <input type="text" value="2" class="txtValue">
+                                        <button class="btnPlus pls altera">&#x2b;</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="pTotal">2880.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdImg"><img src="Image/cart1.png" class="img-fluid"></td>
+                                <td class="align-self-center tdItem">
+                                    <p class="pItem">Elixir</p>
+                                    <p class="pSubItem">Premium Powdered Drink</p>
+                                </td>
+                                <td class="pPrice">720.00</td>
+                                <td>
+                                    <div class="form-group mx-auto text-center">
+                                        <button class="btnMinus pls minus">&#x2212;</button>
+                                        <input type="text" value="2" class="txtValue">
+                                        <button class="btnPlus pls altera">&#x2b;</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="pTotal">2880.00</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label class="pVoucher">Voucher</label>
+                <input type="text" class="txtVoucher" placeholder="type code or voucher here">
+            </div>
+            <div class="col-lg-3 float-right">
+                <div class="float-right">
+                    <p class="pVoucher">Location</p>
+                    <p class="pVoucher" style="margin-top: 30px;">Shipping fee</p>
+                    <p class="pVoucher" style="margin-top: 30px;color: #a6bc70;">Total</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <select id="selectbox" data-selected="">
+                    <option value="" selected="selected" disabled="disabled">Select location</option>
+                    <option value="1">Sample</option>
+                    <option value="2">Sample1</option>
+                    <option value="3">Sample2</option>
+                    <option value="4">Sample3</option>
+                </select>
+                <p class="pShipping">0.00</p>
+                <p class="pAllTotal"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #baca91;">
+        <div class="container divFooter con" style="margin-top: 100px;">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <img src="Image/footerlogo.png" class="img-fluid mx-auto d-block" style="width: 100px;">
+                </div>
+                <div class="col-lg-3">
+                    <p class="pFooterTitle">NAVIGATION</p>
+                    <div class="divFooterSub">
+                        <p class="pFooterTitleSub">Home</p>
+                        <p class="pFooterTitleSub">About</p>
+                        <p class="pFooterTitleSub">Shop</p>
+                        <p class="pFooterTitleSub">Plans</p>
+                        <p class="pFooterTitleSub">Contact</p>
+                    </div>
+                    <p class="pFooterTitle" style="margin-top: -3px;">Terms and Conditions</p>
+                </div>
+                <div class="col-lg-3">
+                    <p class="pFooterTitle">FIND US</p>
+                    <p class="pFooterTitleSubAdd">Head Office, Unit 3102B
+                        East Tower, PSE Center Exchange
+                        Road, Ortigas Center, Pasig City,
+                        Philippines 1600 </p>
+                    <p class="pFooterTitleSub" style="margin-left: 0px;">+63917-767-1505</p>
+                    <p class="pFooterTitleSub" style="margin-left: 0px;">(+632)451-1505</p>
+                    <p class="pFooterTitleSub" style="margin-left: 0px;margin-top: 10px;">mci_megacrystal@yahoo.com</p>
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="txtSearch">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.pls.altera').click(function () {
+            var curr_quantity = $(this).prev().val();
+            curr_quantity = parseInt(curr_quantity) + 1;
+            $(this).closest("tr").find(".pTotal").text(curr_quantity * 720);
+            $(this).prev().val(curr_quantity);
+        });
+        $('.pls.minus').click(function () {
+            var curr_quantity = $(this).next().val();
+            if (curr_quantity != 0) {
+                curr_quantity = parseInt(curr_quantity) - 1;
+                $(this).closest("tr").find(".pTotal").text(curr_quantity * 720);
+                $(this).next().val(curr_quantity);
+            }
+        });
+    });
+
+    var sum = 0;
+    // iterate through each td based on class and add the values
+    $('.pTotal').each(function () {
+
+        var value = $(this).text();
+        // add only if the value is number
+        if (!isNaN(value) && value.length != 0) {
+            sum += parseFloat(value);
+        }
+        else {
+
+        }
+        $('.pAllTotal').text(sum);
+    });
+
+    AOS.init();
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 10) {
+            $('.fixed-top').css('background', 'transparent');
+            $('.fixed-top').css('box-shadow', 'none');
+        } else {
+            $('.fixed-top').css('background', 'white');
+            $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+        }
+    });
+
+    var click;
+
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focus', function () {
+            $('.nav-link').css('visibility', 'hidden');
+        });
+    });
+    $(document).ready(function () {
+        $('.txtSearchNav').bind('focusout', function () {
+            $('.nav-link').css('visibility', 'visible');
+        });
+    });
+</script>
+
+</html>
