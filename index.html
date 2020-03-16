@@ -24,7 +24,6 @@
     <script src='Script\glider.min.js'></script>
     <link href="Css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
-
     <title>MCelite - Homepage</title>
 </head>
 
@@ -71,14 +70,24 @@
                     <li><a class="nav-link btncontact"
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
                             href="contact.html">CONTACT</a></li>
-                    <li>
+                    <li style="margin-left: 50px;">
                         <div id="wrap">
-                            <form action="" autocomplete="on">
-                                <input id="search" name="search" type="text" class="txtSearchNav"
-                                    placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher"
-                                    type="submit" class="submitNav">
-                            </form>
+                            <input id="search" name="search" type="text" class="txtSearchNav"
+                                placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher"
+                                type="submit" class="submitNav" style="margin-right: 50px;margin-top: 10px;">
+
                         </div>
+                    </li>
+                    <li>
+                        <a><img src="Image/bag.png" class="img-fluid imgCart" style="width: 18px;margin-top: 5px;"></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" k>log-in</a>
+                    </li>
+                    <li>
+                    
+                            <input type = "text" class = "txtSearchHidden">
+                       
                     </li>
                 </ul>
             </div>
@@ -271,7 +280,7 @@
         });
     });
 
-    var countDownDate = new Date("March 15, 2020 15:37:25").getTime();
+    var countDownDate = new Date("March 20, 2020 15:37:25").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
@@ -299,6 +308,14 @@
         }
     }, 1000);
 
+
+    $('#collapse').on('show.bs.collapse', function () {
+        $('.navbar').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+    })
+
+    $('#collapse').on('hide.bs.collapse', function () {
+        $('.navbar').css('box-shadow', 'none');
+    })
 </script>
 <script>
     new Glider(document.querySelector('.glider'), {
