@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #f6f7f5;
+    position: relative;
 }
 
 .navbar {
@@ -38,7 +39,19 @@ html, body {
         width: 50px !important;
     }
     .box {
-        width: 100% !important;
+        width: 95% !important;
+        position: absolute !important;
+        top: 0px !important;
+    }
+    .imgPlantLeft, .imgPlantRight {
+        display: none !important;
+        bottom: 0px;
+    }
+    .mainCon {
+        padding: 0px !important;
+        position: relative;
+        width: auto !important;
+        height: 50% !important;
     }
 }
 
