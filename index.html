@@ -29,7 +29,7 @@
 
 <body>
     <div class="container-fluid conNav"
-        style="background-color: white !important;position: fixed;top: 0px;padding: 0px;">
+        style="position: fixed;top: 0px;padding: 0px;">
         <div class="row rowNav" style="padding: 10px 0px;transition: all 0.2s;">
             <div class="col-lg-6 col-md-6  col-sm-6 colNav text-right">
                 <p class="pPromo"><span
@@ -44,7 +44,7 @@
                 <button class="btnNav">&#x2191;</button>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm navbar-light" style="z-index: 99;margin-top:-10px;">
+        <nav class="navbar navbar-expand-sm navbar-light" style="margin-top:-10px;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,14 +59,11 @@
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto ;font-size: 15px;font-weight: 700;"
                             href="index.html">HOME</a></li>
                     <li><a class="nav-link btncontact"
-                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
-                            href="contact.html">ABOUT</a></li>
-                    <li><a class="nav-link btnlogin" target="_self" href="item.html"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;z-index: 999999;"
+                            href="about.html">ABOUT</a></li>
+                    <li><a class="nav-link btnlogin" target="_self" href="shop.html"
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;">SHOP</a>
                     </li>
-                    <li><a class="nav-link btncontact"
-                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
-                            href="contact.html">PLANS</a></li>
                     <li><a class="nav-link btncontact"
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
                             href="contact.html">CONTACT</a></li>
@@ -79,15 +76,15 @@
                         </div>
                     </li>
                     <li>
-                        <a><img src="Image/bag.png" class="img-fluid imgCart" style="width: 18px;margin-top: 5px;"></a>
+                        <a href = "cart.html"><img src="Image/bag.png" class="img-fluid imgCart" style="width: 18px;margin-top: 5px;"></a>
                     </li>
                     <li>
-                        <a class="nav-link" k>log-in</a>
+                        <a class="nav-link" href = "login.html">log-in</a>
                     </li>
                     <li>
-                    
-                            <input type = "text" class = "txtSearchHidden">
-                       
+
+                        <input type="text" class="txtSearchHidden" id="search">
+
                     </li>
                 </ul>
             </div>
@@ -105,7 +102,7 @@
                 <button class="btnBuy">SHOP FOR PRODUCTS</button>
             </div>
             <div class="col-lg-7 col-md-7 mx-auto text-center order-first colImage">
-                <img src="Image/Packaging.png" class="img-fluid imgMain" data-aos="zoom-in">
+                <img src="Image/Packaging.png" class="img-fluid imgMain" data-aos="zoom-in" style="z-index: -999999999;">
             </div>
         </div>
     </div>
@@ -240,10 +237,12 @@
         var scroll = $(window).scrollTop();
         if (scroll < 1) {
             $('.navbar').css('background', 'transparent');
+            $('.conNav').css('background', 'transparent');
             $('.navbar').css('box-shadow', 'none');
             $('.conNav').css('z-index', '0');
         } else {
             $('.navbar').css('background', 'white');
+            $('.conNav').css('background', 'white');
             $('.navbar').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
             $('.conNav').css('z-index', '99');
         }

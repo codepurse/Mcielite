@@ -25,8 +25,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid conNav" style="position: fixed;top: 0px;padding: 0px;z-index: 9999;">
+        <div class="row rowNav" style="padding: 10px 0px;transition: all 0.2s;">
+            <div class="col-lg-6 col-md-6  col-sm-6 colNav text-right">
+                <p class="pPromo"><span
+                        style="font-family: Abril Fatface;color:#97b058;font-size: 2rem;font-weight: 700;">PROMO</span>&nbsp;<span
+                        style="font-family: Abril Fatface;color: #3d5000;font-size: 1.8rem;font-weight: 700;">Buy 2, get
+                        2 free!</span></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p id="demo"></p>
+            </div>
+            <div class="col-lg-12">
+                <button class="btnNav">&#x2191;</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="margin-top:-10px;background-color: transparent;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,29 +52,43 @@
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav ml-auto">
                     <li><a class="nav-link btnpackages"
-                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto ;font-size: 15px;font-weight: 300;"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto ;font-size: 15px;font-weight: 700;"
                             href="index.html">HOME</a></li>
                     <li><a class="nav-link btncontact"
-                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
-                            href="contact.html">ABOUT</a></li>
-                    <li><a class="nav-link btnlogin" target="_self" href="item.html"
+                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;z-index: 999999;"
+                            href="about.html">ABOUT</a></li>
+                    <li><a class="nav-link btnlogin" target="_self" href="shop.html"
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;">SHOP</a>
                     </li>
                     <li><a class="nav-link btncontact"
                             style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
                             href="contact.html">CONTACT</a></li>
-                    <li>
-                        <img src="Image/cart.png" class="img-fluid imgCart" style="width: 18px;margin-top: 10px;">
+                    <li style="margin-left: 50px;">
+                        <div id="wrap">
+                            <input id="search" name="search" type="text" class="txtSearchNav"
+                                placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher"
+                                type="submit" class="submitNav" style="margin-right: 50px;margin-top: 10px;">
+
+                        </div>
                     </li>
-                    <li><a class="nav-link btncontact"
-                            style="margin-right: 15px;color:#3a5c3e;font-family: Roboto;font-size: 15px;font-weight: 300;"
-                            href="contact.html">log-in</a></li>
+                    <li>
+                        <a href="cart.html"><img src="Image/bag.png" class="img-fluid imgCart"
+                                style="width: 18px;margin-top: 5px;"></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="login.html">log-in</a>
+                    </li>
+                    <li>
+
+                        <input type="text" class="txtSearchHidden" id="search">
+
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container">
-        <div class="row" style="margin-top: 150px;">
+        <div class="row rowTable" style="margin-top: 220px;">
             <div class="col-lg-12">
                 <div class="table-responsive">
                     <table class="table table-borderless" id="shoplist">
@@ -75,38 +103,38 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tdImg"><img src="Image/cart1.png" class="img-fluid"></td>
-                                <td class="align-self-center tdImg">
+                                <td class="tdImg" data-label="Image"><img src="Image/cart1.png" class="img-fluid"></td>
+                                <td class="align-self-center tdItem" data-label="Item name">
                                     <p class="pItem">Elixir</p>
                                     <p class="pSubItem">Premium Powdered Drink</p>
                                 </td>
-                                <td class="pPrice">720.00</td>
-                                <td>
-                                    <div class="form-group mx-auto text-center">
+                                <td class="pPrice" data-label="Price">720.00</td>
+                                <td data-label="Quantity">divQu
+                                    <div class="form-group mx-auto text-center divQuantity">
                                         <button class="btnMinus pls minus">&#x2212;</button>
                                         <input type="text" value="2" class="txtValue">
                                         <button class="btnPlus pls altera">&#x2b;</button>
                                     </div>
                                 </td>
-                                <td>
+                                <td data-label="Total">
                                     <p class="pTotal">2880.00</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="tdImg"><img src="Image/cart1.png" class="img-fluid"></td>
-                                <td class="align-self-center tdItem">
+                                <td class="tdImg" data-label="Image"><img src="Image/cart1.png" class="img-fluid"></td>
+                                <td class="align-self-center tdItem" data-label="Item name">
                                     <p class="pItem">Elixir</p>
                                     <p class="pSubItem">Premium Powdered Drink</p>
                                 </td>
-                                <td class="pPrice">720.00</td>
-                                <td>
-                                    <div class="form-group mx-auto text-center">
+                                <td class="pPrice" data-label="Price">720.00</td>
+                                <td data-label="Quantity">
+                                    <div class="form-group mx-auto text-center divQuantity">
                                         <button class="btnMinus pls minus">&#x2212;</button>
                                         <input type="text" value="2" class="txtValue">
                                         <button class="btnPlus pls altera">&#x2b;</button>
                                     </div>
                                 </td>
-                                <td>
+                                <td data-label="Total">
                                     <p class="pTotal">2880.00</p>
                                 </td>
                             </tr>
@@ -115,20 +143,37 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+    </div>
+    <div class="container">
+        <div class="row rowTotal" style="margin-top: -50px;">
             <div class="col-lg-6">
-                <label class="pVoucher">Voucher</label>
-                <input type="text" class="txtVoucher" placeholder="type code or voucher here">
+
             </div>
-            <div class="col-lg-3 float-right">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
                 <div class="float-right">
+                    <hr>
+                    <p class="pTotal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="form-inline">
+                    <label class="pVoucher">Voucher</label>
+                    <input type="text" class="txtVoucher" placeholder="type code or voucher here">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 colPrice">
+                <div class="float-right divText">
                     <p class="pVoucher">Location</p>
                     <p class="pVoucher" style="margin-top: 30px;">Shipping fee</p>
                     <p class="pVoucher" style="margin-top: 30px;color: #a6bc70;">Total</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <select id="selectbox" data-selected="">
+            <div class="col-lg-3 col-md-6  col-sm-6 col-6 colPrice ">
+                <select id="selectbox" data-selected="" class="float-right">
                     <option value="" selected="selected" disabled="disabled">Select location</option>
                     <option value="1">Sample</option>
                     <option value="2">Sample1</option>
@@ -137,6 +182,7 @@
                 </select>
                 <p class="pShipping">0.00</p>
                 <p class="pAllTotal"></p>
+                <button class="btnProceed">PROCEED</button>
             </div>
         </div>
     </div>
@@ -165,7 +211,8 @@
                         Philippines 1600 </p>
                     <p class="pFooterTitleSub" style="margin-left: 0px;">+63917-767-1505</p>
                     <p class="pFooterTitleSub" style="margin-left: 0px;">(+632)451-1505</p>
-                    <p class="pFooterTitleSub" style="margin-left: 0px;margin-top: 10px;">mci_megacrystal@yahoo.com</p>
+                    <p class="pFooterTitleSub" style="margin-left: 0px;margin-top: 10px;">mci_megacrystal@yahoo.com
+                    </p>
                 </div>
                 <div class="col-lg-4">
                     <input type="text" class="txtSearch">
@@ -209,20 +256,20 @@
 
         }
         $('.pAllTotal').text(sum);
+        $('.pTotal').text(sum);
     });
 
     AOS.init();
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 10) {
-            $('.fixed-top').css('background', 'transparent');
-            $('.fixed-top').css('box-shadow', 'none');
+            $('.conNav').css('background', 'transparent');
+            $('.conNav').css('box-shadow', 'none');
         } else {
-            $('.fixed-top').css('background', 'white');
-            $('.fixed-top').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+            $('.conNav').css('background', 'white');
+            $('.conNav').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
         }
     });
-
     var click;
 
     $(document).ready(function () {
@@ -233,6 +280,61 @@
     $(document).ready(function () {
         $('.txtSearchNav').bind('focusout', function () {
             $('.nav-link').css('visibility', 'visible');
+        });
+    });
+
+    var countDownDate = new Date("March 30, 2020 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+
+    $('#collapse').on('show.bs.collapse', function () {
+        $('.navbar').css('box-shadow', '0px 5px 21px 0px rgba(0,0,0,0.27)');
+    })
+
+    $('#collapse').on('hide.bs.collapse', function () {
+        $('.navbar').css('box-shadow', 'none');
+    })
+
+    var x = 1;
+    $(document).ready(function () {
+        $(".btnNav").click(function () {
+            if (x === 1) {
+                $('.rowNav').css('margin-top', '-80px');
+                $('.btnNav').text("\u2193");
+                $('.mainCon').css('margin-top', '-40px');
+                x = 0;
+            }
+            else {
+                $('.rowNav').css('margin-top', '0px');
+                $('.btnNav').text("\u2191");
+                x = 1;
+                $('.mainCon').css('margin-top', '0px');
+            }
         });
     });
 </script>

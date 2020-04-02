@@ -161,41 +161,6 @@ html, body {
     .nav {
         background-color: white !important;
     }
-    .navbar, .conNav {
-        background-color: white !important;
-        z-index: 99999 !important;
-    }
-    .pPromo {
-        font-size: 1.2rem !important;
-        text-align: center !important;
-    }
-    .pPromo>span {
-        font-size: 1.2rem !important;
-    }
-    #demo {
-        font-size: 1.2rem !important;
-        text-align: center !important;
-    }
-    .align-self-end {
-        margin-top: 70px !important;
-        margin-left: 10px !important;
-    }
-    #wrap {
-        display: none !important;
-    }
-    .txtSearchHidden {
-        display: block !important;
-    }
-    .divItemName {
-        text-align: center;
-        margin-top: 140px;
-    }
-    .colItem {
-        margin-top: 0px !important;
-    }
-    .conIngredients {
-        margin-top: 450px !important;
-    }
 }
 
 .container-fluid, .container {
@@ -204,6 +169,13 @@ html, body {
 
 .navbar {
     transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
 }
 
 .pTitle {
@@ -532,9 +504,6 @@ a:hover:after {
     }
 }
 
-#wrap {
-    margin-left: 10px;
-}
 
 .txtSearchNav {
     font-family: Raleway;
@@ -548,8 +517,8 @@ a:hover:after {
     padding-right: 60px;
     width: 0px;
     position: absolute;
-    top: 5;
-    right: 0;
+    top: 10;
+    right: 120px;
     padding-bottom: 0px;
     background: none;
     z-index: 3;
@@ -579,12 +548,43 @@ input[type="submit"] {
     text-indent: -1000px;
     border: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 80px;
     z-index: 2;
     cursor: pointer;
-    margin-top: 8px;
-    margin-left: 20px;
+}
+
+.txtSearchHidden {
+    width: 100% !important;
+    font-family: Raleway;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #baca91;
+    padding: 8px 10px;
+    display: none;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.btnNav {
+    font-family: Raleway;
+    color: white;
+    background-color: #99b15b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
 }
 
 .pFooterTitleSub:hover {
@@ -717,6 +717,7 @@ input[type="submit"] {
     transition: all 0.2s;
 }
 
+
 .active {
     background-color: transparent !important;
 }
@@ -727,86 +728,4 @@ input[type="submit"] {
 
 .glider-track {
     width: 2000px !important;
-}
-
-.txtSearchNav {
-    font-family: Raleway;
-    font-size: 1.2rem;
-    height: 40px;
-    display: inline-block;
-    font-weight: 400;
-    border: none;
-    outline: none;
-    color: #3a5c3e;
-    padding-right: 60px;
-    width: 0px;
-    position: absolute;
-    top: 10;
-    right: 120px;
-    padding-bottom: 0px;
-    background: none;
-    z-index: 3;
-    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-    cursor: pointer;
-}
-
-.txtSearchNav:focus:hover {
-    border-bottom: 1px solid #3e4e15;
-}
-
-.txtSearchNav:focus {
-    width: 350px;
-    z-index: 1;
-    border-bottom: 1px solid #3e4e15;
-    cursor: text;
-    margin-right: 10px;
-}
-
-input[type="submit"] {
-    height: 67px;
-    width: 40px;
-    display: inline-block;
-    color: red;
-    background: url("../Image/search.png") center center no-repeat;
-    background-size: 18px;
-    text-indent: -1000px;
-    border: none;
-    position: absolute;
-    top: 8px;
-    right: 80px;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.txtSearchHidden {
-    width: 100% !important;
-    font-family: Raleway;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #baca91;
-    padding: 8px 10px;
-    display: none;
-    border: 1px solid lightgray;
-    border-radius: 25px;
-}
-
-.btnNav {
-    font-family: Raleway;
-    color: white;
-    background-color: #99b15b;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    border: 0px;
-    padding: 5px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-#demo {
-    font-family: Abril Fatface;
-    color: #97b058;
-    font-size: 2rem;
-    font-size: 700;
 }

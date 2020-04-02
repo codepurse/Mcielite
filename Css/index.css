@@ -39,6 +39,10 @@ html, body {
     }
 }
 
+.colImage {
+    z-index: -99999;
+}
+
 @media only screen and (max-width: 556px) {
     .colImage {
         margin-top: 125px !important;

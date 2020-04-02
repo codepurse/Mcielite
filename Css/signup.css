@@ -3,25 +3,75 @@ html, body {
     height: 100%;
 }
 
-.txtSearchNav {
-    font-family: Raleway;
-    font-size: 1.2rem;
-    height: 40px;
-    display: inline-block;
-    font-weight: 400;
-    border: none;
-    outline: none;
-    color: #3a5c3e;
-    padding-right: 60px;
-    width: 0px;
-    position: absolute;
-    top: 5;
-    right: 0;
-    padding-bottom: 0px;
-    background: none;
-    z-index: 3;
-    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-    cursor: pointer;
+@media only screen and (max-width: 954px) {
+    .rowMain {
+        margin-top: 30% !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .txtSearch {
+        margin-top: 10px !important;
+    }
+    .navbar, .conNav {
+        background-color: white !important;
+        z-index: 99999 !important;
+    }
+    .pPromo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .pPromo>span {
+        font-size: 1.2rem !important;
+    }
+    #demo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .align-self-end {
+        margin-top: 70px !important;
+        margin-left: 10px !important;
+    }
+    #wrap {
+        display: none !important;
+    }
+    .txtSearchHidden {
+        display: block !important;
+    }
+    .pTitle {
+        font-size: 3rem !important;
+    }
+    .imglogo {
+        width: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    .rowMain {
+        margin-top: 45% !important;
+    }
+    .pTitle {
+        font-size: 2rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 423px) {
+    .rowMain {
+        margin-top: 50% !important;
+    }
+    .pTitle {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .rowMain {
+        margin-top: 70% !important;
+    }
+    .pTitle {
+        font-size: 2rem !important;
+    }
 }
 
 .aLogo {
@@ -35,6 +85,27 @@ html, body {
 
 .aLogo:hover {
     color: #3a5c3e;
+}
+
+.txtSearchNav {
+    font-family: Raleway;
+    font-size: 1.2rem;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: #3a5c3e;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 10;
+    right: 120px;
+    padding-bottom: 0px;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
 }
 
 .txtSearchNav:focus:hover {
@@ -59,12 +130,43 @@ input[type="submit"] {
     text-indent: -1000px;
     border: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 80px;
     z-index: 2;
     cursor: pointer;
-    margin-top: 8px;
-    margin-left: 20px;
+}
+
+.txtSearchHidden {
+    width: 100% !important;
+    font-family: Raleway;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #baca91;
+    padding: 8px 10px;
+    display: none;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.btnNav {
+    font-family: Raleway;
+    color: white;
+    background-color: #99b15b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
 }
 
 .pTitle {

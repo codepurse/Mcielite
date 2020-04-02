@@ -8,7 +8,7 @@ html, body {
 
 @media only screen and (max-width: 600px) {
     .rowMain {
-        margin-top: 20px !important;
+        margin-top: 150px !important;
     }
     .rowSearch {
         display: block !important;
@@ -37,6 +37,31 @@ html, body {
     }
     .txtSearch {
         margin-top: 10px !important;
+    }
+    .navbar, .conNav {
+        background-color: white !important;
+        z-index: 99999 !important;
+    }
+    .pPromo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .pPromo>span {
+        font-size: 1.2rem !important;
+    }
+    #demo {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .align-self-end {
+        margin-top: 70px !important;
+        margin-left: 10px !important;
+    }
+    #wrap {
+        display: none !important;
+    }
+    .txtSearchHidden {
+        display: block !important;
     }
 }
 
@@ -71,8 +96,6 @@ a:hover:after {
     left: 0;
 }
 
-
-
 @media screen and (max-height: 300px) {
     ul {
         margin-top: 40px;
@@ -95,7 +118,7 @@ a:hover:after {
 .textSearchHidden {
     width: 100%;
     font-family: Raleway;
-    font-size:0.9rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #baca91;
     padding: 8px 10px;
@@ -150,6 +173,39 @@ input[type="submit"] {
     right: 80px;
     z-index: 2;
     cursor: pointer;
+}
+
+.txtSearchHidden {
+    width: 100% !important;
+    font-family: Raleway;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #baca91;
+    padding: 8px 10px;
+    display: none;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.btnNav {
+    font-family: Raleway;
+    color: white;
+    background-color: #99b15b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#demo {
+    font-family: Abril Fatface;
+    color: #97b058;
+    font-size: 2rem;
+    font-size: 700;
 }
 
 .pTitle {
